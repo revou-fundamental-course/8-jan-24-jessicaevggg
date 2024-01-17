@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik Persegi</title>
+<body>
+    <script src="js/script.js"></script>
+    <header>
+        <h1>-----KLKP-----</h1>
+        <h2>Kalkulator Luas dan Keliling Persegi</h2>
+        <p>Web ini digunakan untuk menghitung luas dan keliling persegi dalam rangka menyelesaikan mini project Revou</p>
+    </header>
+
+    <div>
+        <img src="https://i.postimg.cc/fS9xYb5k/Square.png" 
+        alt="abcd square"
+        sizes="50%">
+    </div>
+
+    <div class="inputSection">
+        <label for="s" id="lblSquareSide">Ketiklah panjang sisi persegi pada kotak di bawah ini!</label>
+        <input type="number" id="s" oninput="luas(), kel()">
+    </div>
+
+    <form id="myForm">
+    <div class="button">
+        <button onclick="resetButton()">Reset</button>
+    </div>
+</form>
+
+    <div class="hasil">Luas persegi adalah = <span id="luas"></span></div>
+    <div class="hasil">Keliling persegi adalah = <span id="kel"></span></div>
+</body>
+</html>
